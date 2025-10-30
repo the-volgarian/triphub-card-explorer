@@ -1,16 +1,44 @@
-# React + Vite
+<p align="center">
+  <img src="public/banner.png" alt="Trip Card Explorer banner" width="100%" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Trip Hub Card Explorer** is an interactive web application that helps users discover and explore trip ideas in a visually engaging way. Built with **React + Vite**, it combines modern design, smooth animations, and fast performance to deliver an intuitive browsing experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✅ Features
 
-## React Compiler
+- **Trip grid** rendering from `/public/data.json`, with proper loading & error states.
+- **Image loader**: subtle 3-dot overlay until the image fully loads (even when it’s not a 404).
+- **Search**: keep all cards visible; matches are auto-prioritized to the front, non-matches are **dimmed** instead of hidden.
+- **Sort by Rating** toggle (on/off), descending.
+- **Details modal** with full description and rating.  
+  **Spec:** “Add a ‘More Info’ button that opens a modal …” →  
+  **My build:** the **entire card is the button** (click/Enter opens the modal).
+- **A11y**: keyboard navigation on cards (`role="button"`, `tabIndex=0`, Enter/Space), ESC to close modal, focus management.
+- **Prod-ready** Vite build (dev, build, preview scripts).
+---
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🧱 Tech Stack
 
-## Expanding the ESLint configuration
+- **React 18** + **Vite**
+- **SCSS/CSS modules** for component styling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Quick Start
+
+```bash
+# 1) Install
+npm install
+
+# 2) Start dev server
+npm run dev
+# Vite usually runs at http://localhost:5173
+
+# 3) Build for production
+npm run build
+
+# 4) Preview production build
+npm run preview
+
