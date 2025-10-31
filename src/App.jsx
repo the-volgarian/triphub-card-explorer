@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { fetchTripCards } from './api/tripcards';
 import TripCard from './components/TripCard/TripCard';
-import ToggleSwitch from './components/Ui/ToggleSwitch';
+import ToggleSwitch from './components/Ui/ToggleSwitch/ToggleSwitch';
 import SearchBar from './components/Ui/SearchBar/SearchBar';
 import Modal from './components/Ui/Modal/Modal';
 import './App.css';
