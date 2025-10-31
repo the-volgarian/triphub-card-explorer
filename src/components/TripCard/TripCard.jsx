@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./TripCard.scss";
 import defaultImage from "../../assets/default.png";
-import { unsplashOpt } from "./img";
+import { unsplashOpt } from "../../utils/img";
 
 function TripCard({ trip, onMoreInfo, index = 0, dimmed = false }) {
   const { name, image, description, rating } = trip;
